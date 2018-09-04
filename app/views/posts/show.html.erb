@@ -1,0 +1,4 @@
+<h1><%= @post.title %></h1>
+<%= link_to 'редагувати', edit_post_path(@post) %>
+<%= link_to  'знищити' , post_path(@post), method: :delete, data:{confirm: 'вірняк?'} %>
+<p><%= @post.body %></p>
